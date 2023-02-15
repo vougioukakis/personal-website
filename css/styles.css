@@ -1,29 +1,51 @@
 
 body {
-    background-color: #ECDBBA;
-    margin:0px;
-    padding-top: 0px;
+    background-color:#ECDBBA;
+    background-image: url(abstractgeo.jpg);
+    background-size: contain;
+    background-repeat:no
 }
+
+#name {
+  text-shadow: 2px 0px 4px black;
+  font-size: 3vw;
+
+
+}
+h2 {
+  color: #2D4263;
+  align-items: center;
+  font-size: 2vw;
+}
+
 
 h1 {
     color: #2D4263;
     align-items: center;
-}
-    
+    font-size: 2vw;
+  }
+  
+/*
 .topdiv {
     background-color: #2D4263;
     padding: 80px;
     box-shadow: 0px -5px 10px 0px inset;
 }
+*/
     
 p {
     color: #191919;
-    font-size: 150%;
+    font-size: 2vw;
 }
 
-h3 {
-  color: #191919;
-  font-size: 150%;
+.container {
+  box-shadow: 0px 5px 10px 0px;
+  border: 1px solid black;
+  padding: 5%;
+  margin: 5%;
+  border-radius: 20px;
+  background-color: #ECDBBA;
+  height: 100%;
 }
 
 a {
@@ -33,7 +55,7 @@ a {
     background:
     linear-gradient(
       to right,
-      #ECDBBA /*,white*/,#ECDBBA
+      #ECDBBA ,#ECDBBA
     ),
     linear-gradient(
       to right,
@@ -49,27 +71,4 @@ a:hover {
     background-size: 0 3px, 100% 3px;
     color:#83301f ; 
     
-}
-
-.unilink {
-    color: white;
-    background:
-    linear-gradient(
-      to right,
-      #132238 /*,white*/,#132238
-    ),
-    linear-gradient(
-      to right,
-      #132238, #ECDBBA , #132238
-  );
-  background-size: 100% 3px, 0 3px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
-    
-}
-
-.unilink:hover {
-    background-size: 0 3px, 100% 3px;
-    color: #ECDBBA;
 }
