@@ -1,0 +1,75 @@
+
+body {
+    background-color: #ECDBBA;
+    margin:0px;
+    padding-top: 0px;
+}
+
+h1 {
+    color: #2D4263;
+    align-items: center;
+}
+    
+.topdiv {
+    background-color: #2D4263;
+    padding: 80px;
+    box-shadow: 0px -5px 10px 0px inset;
+}
+    
+p {
+    color: #191919;
+    font-size: 150%;
+}
+
+h3 {
+  color: #191919;
+  font-size: 150%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    color:#83301f;
+    background:
+    linear-gradient(
+      to right,
+      #ECDBBA /*,white*/,#ECDBBA
+    ),
+    linear-gradient(
+      to right,
+      #ECDBBA, #83301f , #ECDBBA
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+    
+}
+a:hover {
+    background-size: 0 3px, 100% 3px;
+    color:#83301f ; 
+    
+}
+
+.unilink {
+    color: white;
+    background:
+    linear-gradient(
+      to right,
+      #132238 /*,white*/,#132238
+    ),
+    linear-gradient(
+      to right,
+      #132238, #ECDBBA , #132238
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+    
+}
+
+.unilink:hover {
+    background-size: 0 3px, 100% 3px;
+    color: #ECDBBA;
+}
