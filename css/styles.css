@@ -1,78 +1,108 @@
-
 body {
-    background-color:#ECDBBA;
-    background-image: url(abstractgeo.jpg);
-    background-size: contain;
-    background-repeat:no
+  background-color: #ECDBBA;
+  background-image: url(abstractgeo.jpg);
+  background-size: contain;
+  background-repeat: no;
+  padding-inline: 5%;
 }
+
 
 #name {
   text-shadow: 2px 0px 4px black;
-  font-size: 2.7vw;
+  font-size: 28px;
 
 
 }
+
 h2 {
   color: #2D4263;
   align-items: center;
-  font-size: 1.5vw;
+  font-size: 22px;
 }
 
 
 h1 {
-    color: #2D4263;
-    align-items: center;
-    font-size: 1.5vw;
-  }
-  
-/*
-.topdiv {
-    background-color: #2D4263;
-    padding: 80px;
-    box-shadow: 0px -5px 10px 0px inset;
+  color: #2D4263;
+  align-items: center;
+  font-size: 22px;
 }
-*/
-    
+
+
+
 p {
-    color: #191919;
-    font-size: 1.5vw;
+  color: #191919;
+  font-size: 20px;
 }
 
 .container {
   box-shadow: 0px 5px 10px 0px;
+  height: auto;
   border: 1px solid black;
   padding: 4%;
   margin: 4%;
   border-radius: 20px;
   background-color: #ECDBBA;
-  height: 120%;
-}
-
-td {
-  height:auto;
 }
 
 a {
-    text-decoration: none;
-    font-weight: bolder;
-    color:#83301f;
-    background:
-    linear-gradient(
-      to right,
-      #ECDBBA ,#ECDBBA
-    ),
-    linear-gradient(
-      to right,
-      #ECDBBA, #83301f , #ECDBBA
-  );
+  text-decoration: none;
+  font-weight: bolder;
+  color: #83301f;
+  background:
+    linear-gradient(to right,
+      #ECDBBA, #ECDBBA),
+    linear-gradient(to right,
+      #ECDBBA, #83301f, #ECDBBA);
   background-size: 100% 3px, 0 3px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 400ms;
-    
+
 }
+
 a:hover {
-    background-size: 0 3px, 100% 3px;
-    color:#83301f ; 
-    
+  background-size: 0 3px, 100% 3px;
+  color: #83301f;
+
 }
+
+
+
+@media (min-width:320px) {
+
+  #main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #aboutme {
+    /*grid-column: 1/6;*/
+    height: auto;
+  }
+  
+  #rightside {
+    /*grid-column: 6/11;*/
+    display: flex;
+    flex-direction: column;
+  }
+}
+  
+@media (min-width:1025px) {
+    #main {
+      display: grid;
+      grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    }
+  
+    #aboutme {
+      grid-column: 1/6;
+      height: auto;
+    }
+    
+    #rightside {
+      grid-column: 6/11;
+      display: flex;
+      flex-direction: column;
+    }
+  
+}
+  
