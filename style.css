@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:#FFECD6;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("src/bg.jpg");
+    background-size: cover;
+}
+
+/* contents includes contents1, 2,... and each contentsX is a card */
+.contents{
+    margin: 0 auto;
+    flex: 1;
+    padding: 10px;
+}
+
+#contents2{
+    flex: 2;
+}
+
+.contents-flexbox{
+    display: flex;
+    margin: 0 5%;
+    
+    /* flex-direction: column; use for mobile*/
+}
+.header {
+    background-color: #0F2167;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5), inset 0px 20px 20px 3px rgba(255, 255, 255, 0.08)/* Increase the blur radius and adjust color */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav {
+    margin: 0 auto;
+    display: block;
+}
+
+.current {
+    color: #FFECD6;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+    
+}
+
+.not-current {
+    color: #4CB9E7;
+    transition: color .2s;
+}
+
+.not-current:hover{
+    color:#FFECD6;
+}
+.home {
+    z-index: 1;
+    position: relative;
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.card{
+    padding:4%;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+.contents-flexbox h2 {
+    margin-top: 0px;
+}
+
+.contents-flexbox h3 {
+    margin-top: 0px;
+}
+.home h1 {
+    font-size: 22px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+#links a {
+    border-radius: 0px;
+    margin: 2px;
+    padding: 2px;
+}
+#links img {
+    /*border: solid rgb(79, 79, 79) 2px;*/
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    width: 120px;
+    height: 50px;
+}
+.home p {
+    font-size: 18px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: box-shadow .2s;
+
+}
+
+.buttons:hover {
+    box-shadow: 0 5px 12px 0px rgba(0,0,0,.5); 
+}
+
+.profile img {
+    width: 150px; /* Adjust the width as needed */
+    border-radius: 50%;
+}
+
+#bg {
+    height: screen;
+    overflow: hidden;
+}
+
+.bg-cont{
+    overflow: hidden;
+}
+
+.uoc {
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 650px) {
+    .contents-flexbox{
+      flex-direction: column;
+    }
+
+    .card {
+        width: auto;
+    }
+
+    #bg {
+        width: auto;
+        height: auto;
+    }
+  }
