@@ -47,7 +47,7 @@ function loadEducationContent() {
             <h3>Selected Books and Online Courses</h2>
                 <h4>Books</h3>
                 <ul>
-                    <li>Introduction to Statistical Learning with R by D. Witten, Gareth M. James, T. Hastie, R. Tibshirani</li>
+                    <li>Introduction to Statistical Learning with R by D. Witten, Gareth M. James, T. Hastie, R. Tibshirani -- <a href="https://www.statlearning.com/">download here</a></li>
                     <li>Intro to Algorithms by Cormen, Leiserson, Rivest, Stein</li>
                     <li>Linear Algebra and Applications by G. Strang</li>
                     <li>Intro to Numerical Analysis by G.Akrivis, V.Dougalis</li>
@@ -92,7 +92,7 @@ function loadHomeContent() {
 
   <div class="contents" id="contents2" style="display:flex; flex-direction:column; gap:20px">
       <div class="card">
-          <p style="margin: 0;">Main interests: Applied and Computational Mathematics, Software Development</p>
+          <p style="margin: 0;">Main interests: Applied and Computational Mathematics, Machine-Statistical Learning, Software Development</p>
       </div>
 
       <div class="card" id="links">
@@ -102,10 +102,13 @@ function loadHomeContent() {
         <a href="https://ocw.mit.edu/"><img src="src/ocw.png"></a>
 
         <a href="https://www.freecodecamp.org/"><img src="src/fcc.png"></a>
+
+        <a href="https://linuxjourney.com/"><img src="src/lj.png"></a>
+
+        <a href="https://bulletin.math.uoc.gr/work/autolist.php?decade=2020"><img src="src/hms.png"></a>
+        
       </div>
   </div>
-
-  <div class="contents
   
   `;
 

@@ -10,23 +10,32 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="nav">
-            <nav>
-                <ul>
-                    <li><a href="#" class="current" id="homeNav" onclick="loadContent('home')">Home</a></li>
-                    <li><a href="#" class="not-current" id="eduNav" onclick="loadContent('education')">Education</a></li>
-                    <!--<li><a href="#" class="not-current" id="projNav">Projects</a></li>
-                    <li><a href="#" class="not-current">Learning</a></li>-->
-                </ul>
-            </nav>
+    <div id="content-wrap">
+        <div class="header">
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="current" id="homeNav" onclick="loadContent('home')">Home</a></li>
+                        <li><a href="#" class="not-current" id="eduNav" onclick="loadContent('education')">Education</a></li>
+                        <!--<li><a href="#" class="not-current" id="projNav">Projects</a></li>
+                        <li><a href="#" class="not-current">Learning</a></li>-->
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </div>
-    <div class="contents-flexbox" id="mainContent">
-    </div>
+        <div class="contents-flexbox" id="mainContent">
+        </div>
 
-    <script src="script.js"></script>
+        <script src="script.js"></script>
+    </div>
+    <br>
+    
+    <footer class="footer">
+        <hr style="margin: 20px; color: darkgray;margin-top: 0px;margin-bottom: 5px;">
+        Nikolaos Vougioukakis 2024</footer>
   
 </body>
+
+
 
 </html>
