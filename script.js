@@ -36,6 +36,7 @@ function loadEducationContent() {
                         <li>Numerical Analysis</li>
                         <li>Programming Lab (HTML, JavaScript, PHP)</li>
                         <li>Programming (C++)</li>
+                        <li>Real Analysis (Lebesgue Measure & integration on real axis)</li>
                         <li>Applications of Probability</li>
                         <li>Design and Analysis of Algorithms</li>
                         <li>Parametric Statistics</li>
