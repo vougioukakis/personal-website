@@ -7,32 +7,80 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico?v=2">
     <title>Nick Vougioukakis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          processEscapes: true
+        }
+      });
+    </script>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 
 <body>
     <div id="content-wrap">
-        <div class="header">
-            <div class="nav">
-                <nav>
-                    <ul>
-                        <li><a href="#" class="current" id="homeNav" onclick="loadContent('home')">Home</a></li>
-                        <li><a href="#" class="not-current" id="eduNav" onclick="loadContent('education')">Education</a></li>
-                        <!--<li><a href="#" class="not-current" id="projNav">Projects</a></li>
-                        <li><a href="#" class="not-current">Learning</a></li>-->
-                    </ul>
-                </nav>
+
+        <!-- left panel -->
+        <div class="contents" id="my-card">
+            <div class="home card">
+                <div class="profile">
+                    <img src="src/pfp.png" alt="Profile Image">
+                </div>
+                <div class="info">
+                    <div>
+                        <h1 style="margin-top: 0px; margin-bottom: 0px; color: #d1ecf8;">Nick Vougioukakis</h1>
+                    </div>
+                    <p style="display: flex; flex-direction: column; justify-content: center; margin: 0; align-items: center;">
+                        Mathematics student at &nbsp;
+                        <a class="link" href="http://math.uoc.gr/en/index.html">University of Crete</a>
+                    </p>
+                    <img class="uoc" src="src/Logo.png">
+                
+                    <div class="buttons-div">
+                        <a href="https://www.linkedin.com/in/nikolaos-vougioukakis-66a2b7256/" style="background-color: #0077b5;" target="_blank" class="buttons"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/vougioukakis" class="buttons" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="buttons" style="background-color: #C71610; cursor: pointer;" onclick="toggleMail();"><i class="fab fa-google"></i></a>
+                    </div>
+
+                    <div id="mailBox" style="display: none;"><p>Gmail: vougioukakis99 (at) gmail (dot) com</p></div>
+                </div>
+
+                <footer class="footer">
+                    <p style="font-size: 10px;">Nikolaos Vougioukakis 2024</p>
+                    <p style="font-size: 10px;">Background designed by Freepik</p>
+                </footer>
             </div>
-        </div>
-        <div class="contents-flexbox" id="mainContent">
+
+        
         </div>
 
-        <script src="script.js"></script>
+
+        <!-- right -->
+
+        <div class="contents-flexbox" id="right">
+            <div class="header">
+                <div class="nav">
+                    <nav>
+                        <ul>
+                            <li><a href="#" class="current" id="homeNav" onclick="loadContent('home')">Home</a></li>
+                            <li><a href="#" class="not-current" id="eduNav" onclick="loadContent('education')">Education</a></li>
+                            <!--<li><a href="#" class="not-current" id="projNav">Projects</a></li>
+                            <li><a href="#" class="not-current">Learning</a></li>-->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+                
+
+            <div class="contents-x2" id="mainContent"></div>
+
+        </div>
+
+        
     </div>
-    <br>
-    
-    <footer class="footer">
-        <hr style="margin: 20px; color: darkgray;margin-top: 0px;margin-bottom: 5px;">
-        Nikolaos Vougioukakis 2024</footer>
   
 </body>
 
