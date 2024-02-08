@@ -1,3 +1,19 @@
+document.onreadystatechange = function() {
+  if (document.readyState !== "complete") {
+      document.querySelector("body").style.visibility = "hidden";
+      document.querySelector("#loader").style.visibility = "visible";
+  } else {
+      document.querySelector("#loading-screen").style.display = "none";
+      document.querySelector("body").style.visibility = "visible";
+  }
+};
+
+/*
+document.onreadystatechange = function() {
+  document.querySelector("body").style.visibility = "hidden";
+  document.querySelector("#loader").style.visibility = "visible";
+
+};*/
 function loadContent(contentId) {
   const mainContent = document.getElementById('mainContent');
   
@@ -34,12 +50,22 @@ function loadEducationContent() {
                     <ul>
                         <li>Python (2 courses)</li>
                         <li>Numerical Analysis</li>
-                        <li>Programming Lab (HTML, JavaScript, PHP)</li>
+                        <li>Numerical Solution of O.D.E.s</li>
+                        <li>Programming Lab (HTML, CSS, JavaScript, PHP, C)</li>
                         <li>Programming (C++)</li>
+                        <li>Object Oriented Programming (Java)</li>
                         <li>Real Analysis (Lebesgue Measure & integration on real axis)</li>
                         <li>Applications of Probability</li>
                         <li>Design and Analysis of Algorithms</li>
                         <li>Parametric Statistics</li>
+                    </ul>
+
+                    <p>Courses I'm taking part in:</p>
+                    <ul>
+                    <li>Probabilistic Graphical Models (grad)</li>
+                    <li>Applied Statistics</li>
+                    <li>Data Science and applications</li>
+                    <li>The Complete Web Dev Bootcamp (Udemy)</li>
                     </ul>
 
             </div>
