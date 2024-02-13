@@ -5,8 +5,18 @@ document.onreadystatechange = function() {
   } else {
       document.querySelector("#loading-screen").style.display = "none";
       document.querySelector("body").style.visibility = "visible";
+      document.body.style.opacity = 1; // Add this line to set opacity to 1
+      blurFade();
   }
 };
+
+function blurFade() {
+  var cards = document.getElementsByClassName("card");
+
+      for (var i = 0; i < cards.length; i++) {
+        cards[i].style.backdropFilter = "blur(30px)";
+      }
+}
 
 /*
 document.onreadystatechange = function() {
@@ -23,11 +33,13 @@ function loadContent(contentId) {
           console.log(document.getElementById("eduNav").className);
           document.getElementById("homeNav").className = "current";
           loadHomeContent();
+          blurFade();
           break;
       case 'education':
         document.getElementsByClassName("current")[0].className = "not-current";
           document.getElementById("eduNav").className = "current";
           loadEducationContent();
+          blurFade();
           break;
       case 'projects':
           mainContent.innerHTML = '<h2>Projects Content</h2><p>This is the projects section.</p>';
