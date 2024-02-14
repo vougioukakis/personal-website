@@ -91,12 +91,16 @@ nav {
     color: #FFECD6;
     border-bottom-width: 2px;
     border-bottom-style: solid;
+    transition: color .2s;
+    transition: border-bottom-style .2s;
     
 }
 
 .not-current {
     color: #4CB9E7;
+    border-bottom-style: none;
     transition: color .2s;
+    transition: border-bottom-style .2s;
 }
 
 .not-current:hover{
