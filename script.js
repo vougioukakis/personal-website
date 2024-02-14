@@ -15,6 +15,7 @@ function blurFade() {
 
       for (var i = 0; i < cards.length; i++) {
         cards[i].style.backdropFilter = "blur(30px)";
+        cards[i].style.webkitBackdropFilter = "blur(30px)";
       }
 }
 
