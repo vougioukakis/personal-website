@@ -1,36 +1,9 @@
 document.onreadystatechange = function() {
-  setTimeout(function(){
-    //do what you need here
-  }, 2000);
   if (document.readyState !== "complete") {
-      setTimeout(function(){
-        //do what you need here
-    }, 2000);
-    //document.querySelector("body").style.visibility = "hidden";
-    document.querySelector("#loader").style.visibility = "visible";
   } else {
-    document.querySelector("#loading-screen").style.display = "none";
-    document.querySelector("body").style.visibility = "visible";
-    document.body.style.opacity = 1; // Add this line to set opacity to 1
-    //blurFade(); was useless
-  }
+    document.body.style.opacity = 1;    }
 };
 
-function blurFade() {
-  var cards = document.getElementsByClassName("card");
-
-      for (var i = 0; i < cards.length; i++) {
-        cards[i].style.backdropFilter = "blur(30px)";
-        cards[i].style.webkitBackdropFilter = "blur(30px)";
-      }
-}
-
-/*
-document.onreadystatechange = function() {
-  document.querySelector("body").style.visibility = "hidden";
-  document.querySelector("#loader").style.visibility = "visible";
-
-};*/
 function loadContent(contentId) {
   const mainContent = document.getElementById('mainContent');
   
@@ -40,13 +13,13 @@ function loadContent(contentId) {
           console.log(document.getElementById("eduNav").className);
           document.getElementById("homeNav").className = "current";
           loadHomeContent();
-          blurFade();
+          setTimeout(blurFade, 100);
           break;
       case 'education':
         document.getElementsByClassName("current")[0].className = "not-current";
           document.getElementById("eduNav").className = "current";
           loadEducationContent();
-          blurFade();
+          setTimeout(blurFade, 100);
           break;
       case 'projects':
           mainContent.innerHTML = '<h2>Projects Content</h2><p>This is the projects section.</p>';
@@ -58,12 +31,21 @@ function loadContent(contentId) {
           console.error('Invalid content ID:', contentId);
   }
 }
-
-
 // Call loadHomeContent when the page loads
 window.onload = function() {
   loadContent('home');
 };
+
+function blurFade() {
+  var cards = document.getElementsByClassName("card");
+
+      for (var i = 0; i < cards.length; i++) {
+        cards[i].style.backdropFilter = "blur(30px)";
+        cards[i].style.webkitBackdropFilter = "blur(30px)";
+      }
+}
+
+
 
 function toggleMail() {
   var element = document.getElementById('mailBox');
