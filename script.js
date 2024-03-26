@@ -28,9 +28,7 @@ function loadContent(contentId) {
 
 // Call loadHomeContent when the page loads
 window.onload = function() {
-  const loading_screen = document.getElementById("load-screen");
-  loading_screen.style.opacity = 0;
-  document.body.style.opacity = 1;
+  document.getElementById("load-screen").style.opacity = 0;
   loadContent('home');
   setTimeout(delete_loading_screen, 400);
 };

@@ -80,7 +80,7 @@ body {
     
     margin: 0;
     font-family: 'Arial', 'sans-serif';
-    background-color:#021624;
+    background-color:#000000;
     background-image: url("src/blue-wavy-background-webp.webp");
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
@@ -90,8 +90,6 @@ body {
     overflow-y:auto;
     overflow-x:hidden ;
     /*transition: opacity 0.3s ease-in-out;*/
-    opacity: 0;
-
     /* scrollbar fix*/
 
     
@@ -181,7 +179,6 @@ nav {
     display: flex;
     flex-direction: row;
     overflow: scroll;
-
     /* scrollbar fix*/
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
