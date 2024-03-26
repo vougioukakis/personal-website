@@ -238,7 +238,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: top center;
+    background-position: top;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35), inset 0px 100px 100px 200px rgba(255, 255, 255, 0.08);
     
     transition: backdrop-filter 2s ease-in-out;
