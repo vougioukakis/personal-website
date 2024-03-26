@@ -1,9 +1,3 @@
-document.onreadystatechange = function() {
-  if (document.readyState !== "complete") {
-  } else {
-    document.body.style.opacity = 1;    }
-};
-
 function loadContent(contentId) {
   const mainContent = document.getElementById('mainContent');
   
@@ -31,11 +25,19 @@ function loadContent(contentId) {
           console.error('Invalid content ID:', contentId);
   }
 }
+
 // Call loadHomeContent when the page loads
 window.onload = function() {
+  const loading_screen = document.getElementById("load-screen");
+  loading_screen.style.opacity = 0;
+  document.body.style.opacity = 1;
   loadContent('home');
+  setTimeout(delete_loading_screen, 400);
 };
 
+function delete_loading_screen(){
+  document.getElementById("load-screen").remove();
+}
 function blurFade() {
   var cards = document.getElementsByClassName("card");
 
