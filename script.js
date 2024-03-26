@@ -7,13 +7,13 @@ function loadContent(contentId) {
           console.log(document.getElementById("eduNav").className);
           document.getElementById("homeNav").className = "current";
           loadHomeContent();
-          setTimeout(blurFade, 100);
+          //setTimeout(blurFade, 100);
           break;
       case 'education':
         document.getElementsByClassName("current")[0].className = "not-current";
           document.getElementById("eduNav").className = "current";
           loadEducationContent();
-          setTimeout(blurFade, 100);
+          //setTimeout(blurFade, 100);
           break;
       case 'projects':
           mainContent.innerHTML = '<h2>Projects Content</h2><p>This is the projects section.</p>';
@@ -26,35 +26,28 @@ function loadContent(contentId) {
   }
 }
 
-// Call loadHomeContent when the page loads
 window.onload = function() {
-  setTimeout(load_stuff, 400);
-  
-};
 
-function load_stuff(){
   // Get the background image URL of the body element
   var src = document.body.style.backgroundImage;
-
-  // Remove 'url(' and ')' from the string to get the actual URL
   src = src.replace('url("', '').replace('")', '');
-
   console.log("Background image URL:", src);
 
   var img = new Image();
+  img.src = src;
+
   img.onload = function() {
-      //console.log('Image loaded');
+      // remove loading screen and load content
       document.getElementById("load-screen").style.opacity = 0;
       loadContent('home');
       setTimeout(delete_loading_screen, 400);
   }
-  img.src = src;
 
   if (img.complete) {
-      //console.log("Image already loaded");
       img.onload();
   }
-}
+};
+
 
 
 
@@ -180,9 +173,46 @@ function loadHomeContent() {
                     <a href="https://bulletin.math.uoc.gr/work/autolist.php?decade=2020"><img src="src/hms.png"></a>
             </div>
 
+            ${generatePostsHTML(posts)}
         </div>
-  
   `;
 
   document.getElementById('mainContent').innerHTML = homeContent;
+
+}
+
+// Sample array of dictionary elements
+const posts = [
+  {
+    title: "The Math behind the Adam Optimizer",
+    source: "towardsdatascience.com",
+    href: "https://towardsdatascience.com/the-math-behind-adam-optimizer-c41407efe59b#5ff9",
+    img: "src/posts/adam-opt.webp"
+  },
+
+  {
+    title: "What is an autoencoder?",
+    source: "ibm.com",
+    href: "https://www.ibm.com/topics/autoencoder",
+    img: "src/posts/autoencoder.png"
+  }
+  // Add more posts as needed
+];
+
+function generatePostsHTML(posts) {
+  let html = '';
+  posts.forEach(post => {
+    html += `
+      <a class="post" href="${post.href}"  style="background-image: url('${post.img}')">
+        <div>
+          <div class="post-title-cont">
+            <h3 class="post-title">${post.title}</h3>
+          </div>
+        </div>
+        <div class="post-source-cont">
+          <p class="post-source">${post.source}</p>
+        </div>
+      </a>`;
+  });
+  return html;
 }
