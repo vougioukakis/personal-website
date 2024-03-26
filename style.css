@@ -288,7 +288,7 @@ nav {
 
 p{
     color: #d1ecf8;
-    /*! margin: 0; */
+    margin: 0;
     padding-inline: 6px;
     /*! background: azure; */
 }
