@@ -78,10 +78,10 @@ body {
     */
 
     
-    margin: 0;
-    font-family: 'Arial', 'sans-serif';
-    background-color:#000000;
     background-image: url("src/blue-wavy-background-webp.webp");
+    background-color:#000000;
+    font-family: 'Arial', 'sans-serif';
+    margin: 0;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
     background-size: 230vh;

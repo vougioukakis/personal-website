@@ -28,10 +28,34 @@ function loadContent(contentId) {
 
 // Call loadHomeContent when the page loads
 window.onload = function() {
-  document.getElementById("load-screen").style.opacity = 0;
-  loadContent('home');
-  setTimeout(delete_loading_screen, 400);
+
+  // Get the background image URL of the body element
+  var src = document.body.style.backgroundImage;
+
+  // Remove 'url(' and ')' from the string to get the actual URL
+  src = src.replace('url("', '').replace('")', '');
+
+  console.log("Background image URL:", src);
+
+  var img = new Image();
+  img.onload = function() {
+      //console.log('Image loaded');
+      document.getElementById("load-screen").style.opacity = 0;
+      loadContent('home');
+      setTimeout(delete_loading_screen, 400);
+  }
+  img.src = src;
+
+  if (img.complete) {
+      //console.log("Image already loaded");
+      img.onload();
+  }
 };
+
+
+
+
+
 
 function delete_loading_screen(){
   document.getElementById("load-screen").remove();
