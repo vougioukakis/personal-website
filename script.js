@@ -28,7 +28,11 @@ function loadContent(contentId) {
 
 // Call loadHomeContent when the page loads
 window.onload = function() {
+  setTimeout(load_stuff, 400);
+  
+};
 
+function load_stuff(){
   // Get the background image URL of the body element
   var src = document.body.style.backgroundImage;
 
@@ -50,8 +54,7 @@ window.onload = function() {
       //console.log("Image already loaded");
       img.onload();
   }
-};
-
+}
 
 
 
