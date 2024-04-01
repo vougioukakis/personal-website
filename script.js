@@ -1,5 +1,6 @@
 function loadContent(contentId) {
   const mainContent = document.getElementById('mainContent');
+  var first_open = 1;
   
   switch (contentId) {
       case 'home':
@@ -7,12 +8,15 @@ function loadContent(contentId) {
           console.log(document.getElementById("eduNav").className);
           document.getElementById("homeNav").className = "current";
           loadHomeContent();
+          scrollToTop(first_open);
+          first_open = 0;
           //setTimeout(blurFade, 100);
           break;
       case 'education':
         document.getElementsByClassName("current")[0].className = "not-current";
           document.getElementById("eduNav").className = "current";
           loadEducationContent();
+          scrollToTop(first_open);
           //setTimeout(blurFade, 100);
           break;
       case 'projects':
@@ -26,6 +30,13 @@ function loadContent(contentId) {
   }
 }
 
+function scrollToTop(first_open){
+  if (first_open == 0) {
+    window.scrollTo(0, 200);
+  } else {
+    window.scrollTo(0, 0);
+  }
+}
 window.onload = function() {
 
   // Get the background image URL of the body element
