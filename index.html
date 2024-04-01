@@ -43,27 +43,45 @@
 
         <!-- left panel -->
         <div class="contents" id="my-card">
-            <div class="home card">
+            <div class="home card" id="my-card-inner">
                 <div class="info">
                     <div>
                         <h1 id="name-text" style="margin-top: 0px; margin-bottom: 0px; color: #d1ecf8;">Nikos Vougioukakis</h1>
                     </div>
-                    <p style="display: flex; flex-direction: column; justify-content: center; margin: 0; align-items: center;">
-                        Mathematics student at &nbsp;
+                    <p style="justify-content: center; margin: 0; align-items: center;">
+                        Mathematics student at 
                         <a class="link" href="http://math.uoc.gr/en/index.html" target="_blank">University of Crete</a>
                     </p>
                     <img class="uoc" src="src/Logo.png">
                 
+                    
+
+                </div>
+
+                <div class="header">
+                    <div class="nav">
+                        <nav>
+                            <ul id="nav-list">
+                                <li><a class="current nav" id="homeNav" onclick="loadContent('home')">Home</a></li>
+                                <li><a class="not-current nav" id="eduNav" onclick="loadContent('education')">Education</a></li>
+                                <!--<li><a href="#" class="not-current" id="projNav">Projects</a></li>
+                                <li><a href="#" class="not-current">Learning</a></li>-->
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <footer class="footer">
+
                     <div class="buttons-div">
                         <a href="https://www.linkedin.com/in/nikolaos-vougioukakis-66a2b7256/" style="background-color: #0077b5;" target="_blank" class="buttons"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/vougioukakis" class="buttons" target="_blank"><i class="fab fa-github"></i></a>
                         <a class="buttons" style="background-color: #C71610; cursor: pointer;" onclick="toggleMail();"><i class="fab fa-google"></i></a>
+
+                        
                     </div>
-
                     <div id="mailBox" style="display: none; "><p style="font-size: 14px;">Gmail: vougioukakis99 (at) gmail (dot) com</p></div>
-                </div>
 
-                <footer class="footer">
                     <p style="font-size: 10px;">Nikolaos Vougioukakis 2024</p>
                     <p style="font-size: 10px;">Background designed by Freepik</p>
                 </footer>
@@ -76,18 +94,7 @@
         <!-- right -->
 
         <div class="contents-flexbox" id="right">
-            <div class="header">
-                <div class="nav">
-                    <nav>
-                        <ul>
-                            <li><a class="current nav" id="homeNav" onclick="loadContent('home')">Home</a></li>
-                            <li><a class="not-current nav" id="eduNav" onclick="loadContent('education')">Education</a></li>
-                            <!--<li><a href="#" class="not-current" id="projNav">Projects</a></li>
-                            <li><a href="#" class="not-current">Learning</a></li>-->
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            
                 
 
             <div class="contents-x2" id="mainContent">
