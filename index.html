@@ -4,21 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload"as="image"href='src/blue-wavy-background-webp.webp'>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico?v=2">
     <title>Nick Vougioukakis</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <script type="text/x-mathjax-config">
+    <!--<script type="text/x-mathjax-config">
       MathJax.Hub.Config({
         tex2jax: {
           inlineMath: [['$', '$'], ['\\(', '\\)']],
           processEscapes: true
         }
       });
-    </script>
+    </script>-->
 
     <script src="script.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>-->
 
     
 </head>
@@ -64,8 +65,8 @@
                             <ul id="nav-list">
                                 <li><a class="current nav" id="homeNav" onclick="loadContent('home')">Home</a></li>
                                 <li><a class="not-current nav" id="eduNav" onclick="loadContent('education')">Education</a></li>
-                                <!--<li><a href="#" class="not-current" id="projNav">Projects</a></li>
-                                <li><a href="#" class="not-current">Learning</a></li>-->
+                                <!--<li><a class="not-current" id="projNav">Projects</a></li>-->
+                                <li><a class="not-current" id="hubNav" onclick="loadContent('learning hub')">Learning Hub</a></li>
                             </ul>
                         </nav>
                     </div>

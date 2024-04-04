@@ -13,17 +13,20 @@ function loadContent(contentId) {
           //setTimeout(blurFade, 100);
           break;
       case 'education':
-        document.getElementsByClassName("current")[0].className = "not-current";
+          document.getElementsByClassName("current")[0].className = "not-current";
           document.getElementById("eduNav").className = "current";
           loadEducationContent();
           scrollToTop(first_open);
           //setTimeout(blurFade, 100);
           break;
-      case 'projects':
+      case 'portfolio':
           mainContent.innerHTML = '<h2>Projects Content</h2><p>This is the projects section.</p>';
           break;
-      case 'learning':
-          mainContent.innerHTML = '<h2>Learning Content</h2><p>This is the learning section.</p>';
+      case 'learning hub':
+          document.getElementsByClassName("current")[0].className = "not-current";
+          document.getElementById("hubNav").className = "current";
+          loadLHContent();
+          scrollToTop(first_open);
           break;
       default:
           console.error('Invalid content ID:', contentId);
@@ -119,7 +122,6 @@ function loadEducationContent() {
                     <li>Descriptive Statistics</li>
                     <li>Optimization Theory</li>
                     <li>Data Science and applications</li>
-                    <li>The Complete Web Dev Bootcamp (Udemy)</li>
                     </ul>
 
             </div>
@@ -127,8 +129,8 @@ function loadEducationContent() {
 
       <div class="contents">
         <div class="card">
-            <h3 class="card-title">Selected Books and Online Courses</h2>
-                    <h4>Books</h3>
+            <h3 class="card-title">Books and Online Courses</h2>
+                    <h4>Books I enjoyed studying</h3>
                     <ul>
                         <li>Introduction to Statistical Learning with R by D. Witten, Gareth M. James, T. Hastie, R. Tibshirani -- <a class="link" href="https://www.statlearning.com/">download here</a></li>
                         <li>Intro to Algorithms by Cormen, Leiserson, Rivest, Stein</li>
@@ -137,8 +139,14 @@ function loadEducationContent() {
                         <li>Numerical Methods for O.D.Es by G.Akrivis, V.Dougalis</li>
                         <li>Programming with C++ by Stroustrup</li>
                         <li>Real Analysis by N.L. Carothers</li>
+                        <li>Applied Mathematics by David J. Logan</li>
                         <li>Classical Mechanics by Kibble, Berkshire</li>
                     
+                    </ul>
+
+                    <h4>Favourite Online Courses</h4>
+                    <ul>
+                      <li>The Complete Web Dev Bootcamp (Udemy)</li>
                     </ul>
         </div>
       </div>
@@ -153,10 +161,13 @@ function loadHomeContent() {
             <div class="card">
                     <h3 class="card-title">About Me</h3>
                     <div class="content-box">
-                        <p style="margin: 0;">My main interests are Applied and Computational Mathematics,
-                         Machine-Statistical Learning and Software Development.
+                        <p style="margin: 0;">My main interests revolve around Applied and Computational Mathematics,
+                         Data Science, Machine Learning and Software Development.
                          I love turning ideas into reality by using code and exploring the world through data.
-                          You'll often find me soaking up knowledge in books or experimenting with new code.</p>
+                          You'll frequently find me immersed in books or experimenting with new code to bring concepts to life.
+                          More disciplines that fuel my curiosity are Biology, Bioinformatics, Neuroscience and Physics. I strive
+                           to learn as much as possible across these disciplines, aiming to integrate them into my career,
+                            fostering innovation and making meaningful contributions across technology and science.</p>
                     </div>
             </div>
 
@@ -170,7 +181,16 @@ function loadHomeContent() {
             </div>
         </div>
 
-        <div class="contents">
+        
+  `;
+
+  document.getElementById('mainContent').innerHTML = homeContent;
+
+}
+
+function loadLHContent() {
+  const learning_hub_content = `
+  <div class="contents">
             <div class="card" id="links">
                 <h3 class="card-title">Some nice learning resources</h3>
                     <a href="https://collegecompendium.org/explore"><img src="src/colcomp.png"></a>
@@ -186,13 +206,10 @@ function loadHomeContent() {
 
             ${generatePostsHTML(posts)}
         </div>
+
   `;
-
-  document.getElementById('mainContent').innerHTML = homeContent;
-
+  document.getElementById('mainContent').innerHTML = learning_hub_content;
 }
-
-// Sample array of dictionary elements
 const posts = [
   {
     title: "The Math behind the Adam Optimizer",
