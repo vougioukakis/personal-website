@@ -162,22 +162,16 @@ nav {
 
 .current {
     color: #FFECD6;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    transition: color .2s;
-    transition: border-bottom-style .2s;
-    -webkit-transition: color .2s;
-    -webkit-transition: border-bottom-style .2s;
+    border-bottom: solid 2px;
+
+    transition: color .2s, border-bottom .2s; /* Combine transitions */
     
 }
 
 .not-current {
     color: #4CB9E7;
     border-bottom-style: none;
-    transition: color .2s;
-    transition: border-bottom-style .2s;
-    -webkit-transition: color .2s;
-    -webkit-transition: border-bottom-style .2s;
+    transition: color .2s, border-bottom .2s; /* Combine transitions */
 }
 
 .not-current:hover{
