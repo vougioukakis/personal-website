@@ -28,6 +28,8 @@ function loadContent(contentId) {
           loadLHContent();
           scrollToTop(first_open);
           break;
+      case 'CV':
+          break;
       default:
           console.error('Invalid content ID:', contentId);
   }
@@ -223,6 +225,14 @@ const posts = [
     source: "ibm.com",
     href: "https://www.ibm.com/topics/autoencoder",
     img: "src/posts/autoencoder.png"
+  },
+
+  {
+    title: "Abusing Generative Adversarial Networks to Make 8-bit Pixel Art",
+    source: "medium.com",
+    href: "https://medium.com/@ageitgey/abusing-generative-adversarial-networks-to-make-8-bit-pixel-art-e45d9b96cee7",
+    img: "src/posts/pixel-art.png"
+    
   }
   // Add more posts as needed
 ];
