@@ -105,25 +105,18 @@ function loadEducationContent() {
                     <p>Coursework includes (but not limited to):</p>
                     <ul>
                         <li>Python (2 courses)</li>
+                        <li>Machine Learning</li>
+                        <li>Probabilistic Graphical Models (graduate course)</li>
+                        <li>Design and Analysis of Algorithms</li>
+                        <li>Object Oriented Programming (Java)</li>
+                        <li>Applied Statistics</li>
+                        <li>Parametric Statistics</li>
+                        <li>Real Analysis (Lebesgue Measure & integration on real axis)</li>
                         <li>Numerical Analysis</li>
                         <li>Numerical Solution of O.D.E.s</li>
                         <li>Programming Lab (HTML, CSS, JavaScript, PHP, C)</li>
                         <li>Programming (C++)</li>
-                        <li>Object Oriented Programming (Java)</li>
-                        <li>Real Analysis (Lebesgue Measure & integration on real axis)</li>
                         <li>Applications of Probability</li>
-                        <li>Design and Analysis of Algorithms</li>
-                        <li>Parametric Statistics</li>
-                    </ul>
-
-                    <p>Courses I'm taking part in:</p>
-                    <ul>
-                    <li>Machine Learning</li>
-                    <li>Probabilistic Graphical Models (grad)</li>
-                    <li>Applied Statistics</li>
-                    <li>Descriptive Statistics</li>
-                    <li>Optimization Theory</li>
-                    <li>Data Science and applications</li>
                     </ul>
 
             </div>
@@ -136,6 +129,7 @@ function loadEducationContent() {
                     <ul>
                         <li>Introduction to Statistical Learning with R by D. Witten, Gareth M. James, T. Hastie, R. Tibshirani -- <a class="link" href="https://www.statlearning.com/">download here</a></li>
                         <li>Intro to Algorithms by Cormen, Leiserson, Rivest, Stein</li>
+                        <li>Probabilistic Graphical Models by D. Koller, N. Friedman</li>
                         <li>Linear Algebra and Applications by G. Strang</li>
                         <li>Intro to Numerical Analysis by G.Akrivis, V.Dougalis</li>
                         <li>Numerical Methods for O.D.Es by G.Akrivis, V.Dougalis</li>
