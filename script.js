@@ -129,6 +129,7 @@ function loadEducationContent() {
                     <ul>
                         <li>Introduction to Statistical Learning with R by D. Witten, Gareth M. James, T. Hastie, R. Tibshirani -- <a class="link" href="https://www.statlearning.com/">download here</a></li>
                         <li>Intro to Algorithms by Cormen, Leiserson, Rivest, Stein</li>
+                        <li>OpenIntro Statistics by by C. Barr, D. Diez, and M. Çetinkaya-Rundel --  <a class="link" href="https://www.openintro.org/book/os/">download here</a></li>
                         <li>Probabilistic Graphical Models by D. Koller, N. Friedman</li>
                         <li>Linear Algebra and Applications by G. Strang</li>
                         <li>Intro to Numerical Analysis by G.Akrivis, V.Dougalis</li>
