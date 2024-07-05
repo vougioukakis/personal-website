@@ -104,9 +104,9 @@ function loadEducationContent() {
 
                     <p>Coursework includes (but not limited to):</p>
                     <ul>
-                        <li>Python (2 courses)</li>
-                        <li>Machine Learning</li>
                         <li>Probabilistic Graphical Models (graduate course)</li>
+                        <li>Machine Learning</li>
+                        <li>Python (2 courses)</li>
                         <li>Design and Analysis of Algorithms</li>
                         <li>Object Oriented Programming (Java)</li>
                         <li>Applied Statistics</li>
@@ -172,7 +172,7 @@ function loadHomeContent() {
                     <h3 class="card-title">Experience</h3>
                     <div class="content-box">
                         <ul>
-                          <li>2024-Present: Teaching Assistant in Numerical Analysis, University of Crete</li>
+                          <li>Spring 2024: Teaching Assistant in Numerical Analysis, University of Crete</li>
                         </ul>
                     </div>
             </div>
