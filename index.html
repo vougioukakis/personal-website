@@ -26,6 +26,7 @@
 
 <body>
 
+    <!--
     <div id="load-screen" class="loading">
         <div class="wave"></div>
         <div class="wave"></div>
@@ -37,7 +38,17 @@
         <div class="wave"></div>
         <div class="wave"></div>
         <div class="wave"></div>
+    </div>-->
+
+    <div id="load-screen" class="loading">
+        <p id="welcome" style="opacity: 0; transition: opacity .2s;">Welcome to my website!</p>
     </div>
+
+    <script>setTimeout(() => {
+        document.getElementById('welcome').style.opacity='1';
+      }, 400);
+    
+    </script>
   
   
     <div id="content-wrap">
@@ -95,9 +106,7 @@
 
         <!-- right -->
 
-        <div class="contents-flexbox" id="right">
-            
-                
+        <div class="contents-flexbox" id="right"> 
 
             <div class="contents-x2" id="mainContent">
     
@@ -107,7 +116,7 @@
 
         
     </div>
-  
+    <script defer src="more-content.js"></script>
 </body>
 
 
