@@ -86,7 +86,7 @@ function loadProjectsContent() {
     const projectsContent = `
           <div class="contents">
               <div class="card">
-                  <h3 class="card-title">Financers: A Personal Finance SaaS</h3>
+                  <h3 class="card-title">YBFinance: A Personal Finance SaaS</h3>
                     <p class="proj-description">A personal finance web application that helps users
                      manage their income, expenses, and budgets effectively. It provides analytics
                      and insights, like Net Worth, Cash Flow and Spendings/Income ratio. Built with NextJS,
